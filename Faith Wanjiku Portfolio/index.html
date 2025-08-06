@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        
+        <ul class="nav-links">
+            
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#tech">Technology</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        
+    </header>
+<!-- Hero Header Text -->
+    <header class="hero-header">
+        <h1>Hi, I'm  Faith Wanjiku</h1>
+        <p> BTech Civil Engineering student with a passion for web development.</p>
+        <p>I blend structural precision with digital design, crafting responsive websites that are both functional and visually engaging.</p>
+
+        <p> From HTML and CSS to Python and GitHub workflows, I thrive on building interactive experiences that communicate ideas effectively.</p>
+    </header>
+
+    <!-- Combined About + Education Section -->
+    <section id="about" class="container">
+        <div class="tab-container">
+            <!-- Radio buttons (hidden) -->
+            <input type="radio" name="tab" id="about-tab" checked>
+            <input type="radio" name="tab" id="education-tab">
+
+            <!-- Tab labels -->
+            <div class="tab-labels">
+                <label for="about-tab">About Me</label>
+                <label for="education-tab">Education</label>
+            </div>
+
+            <!-- Tab contents -->
+            <div class="tab-content about-container">
+                <!-- About Me -->
+                <div class="tab-panel about-panel">
+                    <div class="about-text">
+                        <h1>About Me</h1>
+                        <p>Welcome to my portfolio!</p> 
+                        <p>I'm Shi, a Data Analyst from Nairobi, Kenya, blending technical precision.</p>
+                    </div>
+                    <img src="girl.jpg" alt="Faith's photo" class="about-image" />
+                </div>
+
+                <!-- Education -->
+                <div class="tab-panel education-panel">
+                    <div class="edu-list">
+                        <ul>
+                            <li>
+                                <strong>2023 – Present </strong><br />
+                                B.TECH Civil Engineering Tech, Technical University of Kenya
+                            </li>
+                            <li>
+                                <strong>2025 – Present</strong><br />
+                                Software Development Program, Power Learn Project
+                            </li>
+                            <li>
+                                <strong>Certifications</strong><br />
+                                Data Analyst, Africa Agility <br />
+                                Graphic Design, Women In Digital Business(WIDB)<br />
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="container">
+        <h2>Technology Stacks</h2>
+        <ul class="tech-grid">
+            
+            <li>
+                <img src="html.png" alt="HTML logo" width="100px" height="100px"/>
+                <span>HTML</span>
+            </li>
+            <li>
+                <img src="css.png" alt="CSS logo" width="100px" height="100px"/>
+                <span>CSS</span>
+            </li>
+            
+            <li>
+                <img src="javascript.png" alt="JavaScript logo" width="100px" height="100px"/>
+                <span>JavaScript</span>
+            </li>
+            <li>
+                <img src="typescript.png" alt="TypeScript logo" width="100px" height="100px"/>
+                <span>TypeScript</span>
+            </li>
+            <li>
+                <img src="react.png" alt="React logo" width="100px" height="100px"/>
+                <span>React</span>
+            </li>
+            <li>
+                <img src="nodejs.png" alt="Node.js logo" width="100px" height="100px"/>
+                <span>Node.js</span>
+            </li>
+            <li>
+                <img src="python.png" alt="Python logo" width="100px" height="100px"/>
+                <span>Python</span>
+            </li>
+            <li>
+                <img src="firebase.png" alt="Firebase logo" width="100px" height="100px"/>
+                <span>Firebase</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <ul class="project-grid">
+            
+
+            
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section container">
+        <div class="contact-cards">
+            <!-- Left Card: Contact Info -->
+            <div class="contact-card">
+                <h2 style="text-align: center;">Contact Me</h2>
+                <p><strong>Email:</strong> <a href="mailto:wanjikufayie1@gmail.com">wanjikufayie1@gmail.com</a></p>
+                <p><strong>Phone:</strong> +254 757169312</p>
+                <p><strong>Location:</strong> Nairobi, Kenya</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/faith-wanjiku-685192268/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn" width="30" height="30"/>
+                    </a>
+                    <a href="https://github.com/shiko-hub" target="_blank">
+                        <img src="github.png" alt="GitHub" width="30" height="30"/>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Card: Contact Form -->
+            <div class="contact-card">
+                <h2 style="text-align: center;">Leave a Message</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <!-- Simulated submission with a disabled button -->
+                    <button type="submit">Send Message</button>
+                    <p class="note">* Form simulation only. No message will be sent.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Thank you for visiting my portfolio website!</p>
+        
+        <p>Stay tuned for more exciting projects and updates!</p>
+
+        <p>&copy; 2025 Faith Wanjiku. All rights reserved.</p>
+
+    </footer>
+</body>
+</html>
+    
